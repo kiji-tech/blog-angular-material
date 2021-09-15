@@ -7,18 +7,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
 
-import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { SliderComponent } from './sample/slider/slider.component';
 import { ButtonComponent } from './sample/button/button.component';
+import { CheckboxComponent } from './sample/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
-    ButtonComponent
+    ButtonComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { ButtonComponent } from './sample/button/button.component';
     BrowserAnimationsModule,
     FormsModule,
     MatButtonModule,
+    MatCheckboxModule,
     MatIconModule,
     MatSliderModule
   ],

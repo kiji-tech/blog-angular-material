@@ -7,21 +7,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
 
-import { MatButtonModule } from '@angular/material/button';
+import { MatButtonModule }   from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule }     from '@angular/material/icon';
+import { MatSliderModule }   from '@angular/material/slider';
+import { MatCardModule }     from '@angular/material/card';
 
-import { SliderComponent } from './sample/slider/slider.component';
-import { ButtonComponent } from './sample/button/button.component';
+import { SliderComponent }   from './sample/slider/slider.component';
+import { ButtonComponent }   from './sample/button/button.component';
 import { CheckboxComponent } from './sample/checkbox/checkbox.component';
+import { CardComponent }     from './sample/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
     ButtonComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -29,12 +32,13 @@ import { CheckboxComponent } from './sample/checkbox/checkbox.component';
     BrowserAnimationsModule,
     FormsModule,
     MatButtonModule,
+    MatCardModule,
     MatCheckboxModule,
     MatIconModule,
     MatSliderModule
   ],
   schemas : [ CUSTOM_ELEMENTS_SCHEMA ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

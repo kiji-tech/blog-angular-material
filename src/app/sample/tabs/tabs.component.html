@@ -1,0 +1,98 @@
+<h3>タブの位置(先頭)</h3>
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<br><br>
+
+<h3>タブの位置(中央)</h3>
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<br><br>
+
+<h3>タブの位置(後方)</h3>
+<mat-tab-group mat-align-tabs="end">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<br><br>
+
+<h3>アニメーションなし</h3>
+<mat-tab-group animationDuration="0ms">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<br><br>
+
+<h3>スローアニメーション</h3>
+<mat-tab-group animationDuration="2000ms">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<br><br>
+
+<h3>アイコン付きタブ</h3>
+<mat-tab-group>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            First
+        </ng-template>
+        Content 1
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            Second
+        </ng-template>
+        Content 2
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            Third
+        </ng-template>
+
+        Content 3
+    </mat-tab>
+</mat-tab-group>
+  
+<br><br>
+
+<h3>ボトムタブ</h3>
+<mat-tab-group headerPosition="below">
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+  
+<h3>色付け</h3>
+<mat-tab-group backgroundColor="primary" color="warn">
+    <mat-tab label="Tab 1">Content 1</mat-tab>
+    <mat-tab label="Tab 2">Content 2</mat-tab>
+</mat-tab-group>
+
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link 
+        *ngFor="let link of link_list"
+        (click)="navClick(link)"
+        [active]="active_link == link"
+    >{{link}}</a>
+</nav>
+
+<router-outlet></router-outlet>

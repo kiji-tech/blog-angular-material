@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Dialog Sample</h2>
+<mat-dialog-content class="mat-typography">
+    <h3>{{data}}</h3>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">キャンセル</button>
+    <button mat-button mat-dialog-close="123" cdkFocusInitial>OK</button>
+</mat-dialog-actions>
+  

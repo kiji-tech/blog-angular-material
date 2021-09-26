@@ -11,7 +11,6 @@ export class TabsComponent implements OnInit {
   link_list = ['button', 'slider'];
   active_link = this.link_list[0];
 
-
   constructor(private router : Router) { }
 
   ngOnInit(): void {
@@ -20,8 +19,5 @@ export class TabsComponent implements OnInit {
   navClick( link : string ) : void {
     this.active_link = link;
     this.router.navigateByUrl(this.active_link);
-
   }
-
-
 }

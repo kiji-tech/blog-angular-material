@@ -1,0 +1,47 @@
+<h2>メニュー</h2>
+<button mat-button [matMenuTriggerFor]="BasicMenu">BasicMenu</button>
+<mat-menu #BasicMenu="matMenu" (closed)="menuClosed()">
+    <button mat-menu-item>メニュー1</button>
+    <button mat-menu-item>メニュー2</button>
+</mat-menu>
+
+<h2>メニュー表示位置</h2>
+<button mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+    <button mat-menu-item>メニュー1</button>
+    <button mat-menu-item>メニュー2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item>メニュー1</button>
+    <button mat-menu-item>メニュー2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item>メニュー1</button>
+    <button mat-menu-item>メニュー2</button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu">After</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item>メニュー1</button>
+    <button mat-menu-item>メニュー2</button>
+</mat-menu>
+
+
+<h2>メニュー階層表示</h2>
+<button mat-button [matMenuTriggerFor]="animals">動物</button>
+<mat-menu #animals="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="fish">魚</button>
+</mat-menu>
+
+<mat-menu #fish="matMenu">
+    <button mat-menu-item>鮪</button>
+    <button mat-menu-item>鯛</button>
+    <button mat-menu-item>鮫</button>
+    <button mat-menu-item>鰈</button>
+    <button mat-menu-item>鮃</button>
+</mat-menu>

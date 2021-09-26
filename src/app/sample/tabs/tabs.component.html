@@ -87,6 +87,7 @@
 </mat-tab-group>
 
 
+<h3>ナビゲーション</h3>
 <nav mat-tab-nav-bar>
     <a mat-tab-link 
         *ngFor="let link of link_list"
@@ -94,5 +95,3 @@
         [active]="active_link == link"
     >{{link}}</a>
 </nav>
-
-<router-outlet></router-outlet>

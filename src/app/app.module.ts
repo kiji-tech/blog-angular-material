@@ -12,15 +12,18 @@ import { MatCardModule }     from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule }     from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatSliderModule }   from '@angular/material/slider';
 import { MatTabsModule } from '@angular/material/tabs';
 
-import { SliderComponent }   from './sample/slider/slider.component';
+
 import { ButtonComponent }   from './sample/button/button.component';
 import { CheckboxComponent } from './sample/checkbox/checkbox.component';
 import { CardComponent }     from './sample/card/card.component';
 import { DialogComponent } from './sample/dialog/dialog.component';
 import { DialogPageComponent } from './sample/dialog/dialog-page/dialog-page.component';
+import { MenuComponent } from './sample/menu/menu.component';
+import { SliderComponent }   from './sample/slider/slider.component';
 import { TabsComponent } from './sample/tabs/tabs.component';
 
 @NgModule({
@@ -32,7 +35,8 @@ import { TabsComponent } from './sample/tabs/tabs.component';
     CardComponent,
     DialogComponent,
     DialogPageComponent,
-    TabsComponent
+    TabsComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,7 @@ import { TabsComponent } from './sample/tabs/tabs.component';
     MatCheckboxModule,
     MatDialogModule,
     MatIconModule,
+    MatMenuModule,
     MatSliderModule,
     MatTabsModule
   ],
